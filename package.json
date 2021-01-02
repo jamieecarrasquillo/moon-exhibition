@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "three": "^0.123.0"
   }
 }
