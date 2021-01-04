@@ -60,6 +60,24 @@ const light = {
     this.position.z = (center.z + this.distance) * Math.cos(time * this.speed);
   },
 };
+//Loader
+const manager = new THREE.LoadingManager(
+  () => {
+    // const loading = document.getElementById('')
+    console.log('loaded');
+    const spinner = document.getElementById('spinner');
+    spinner.style.display = 'none';
+    const canvas = document.getElementsByTagName('canvas')[0];
+    canvas.style.display = 'block';
+  },
+  () => {
+    console.log('loading');
+    const spinner = document.getElementById('spinner')
+    spinner.style.display = 'block'
+    const canvas = document.getElementsByTagName('canvas')[0]
+    canvas.style.display = 'none'
+  }
+);
 
 //Creation Of What Will Be Shown Once Page Is Rendered
 function init() {
@@ -82,7 +100,7 @@ function init() {
 
   //Creation Of Sphere/Moon And Moon Textures/Materials
   const geometry = new THREE.SphereBufferGeometry(100, 50, 50);
-  const textureMap = new THREE.TextureLoader().load('moon.jpg');
+  const textureMap = new THREE.TextureLoader(manager).load('moon.jpg');
   const normalMap = new THREE.TextureLoader().load('normal.jpg');
   const material = new THREE.ShaderMaterial({
     uniforms: {
