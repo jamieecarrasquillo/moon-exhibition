@@ -63,15 +63,15 @@ const light = {
 //Loader
 const manager = new THREE.LoadingManager(
   () => {
-    // const loading = document.getElementById('')
-    console.log('loaded');
+    //Once Loaded
+    console.log('Greetings from space!')
     const spinner = document.getElementById('spinner');
     spinner.style.display = 'none';
     const canvas = document.getElementsByTagName('canvas')[0];
     canvas.style.display = 'block';
   },
   () => {
-    console.log('loading');
+    //While Loading
     const spinner = document.getElementById('spinner')
     spinner.style.display = 'block'
     const canvas = document.getElementsByTagName('canvas')[0]

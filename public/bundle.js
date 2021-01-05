@@ -159,15 +159,15 @@ const light = {
 //Loader
 const manager = new three__WEBPACK_IMPORTED_MODULE_0__["LoadingManager"](
   () => {
-    // const loading = document.getElementById('')
-    console.log('loaded');
+    //Once Loaded
+    console.log('Greetings from space!')
     const spinner = document.getElementById('spinner');
     spinner.style.display = 'none';
     const canvas = document.getElementsByTagName('canvas')[0];
     canvas.style.display = 'block';
   },
   () => {
-    console.log('loading');
+    //While Loading
     const spinner = document.getElementById('spinner')
     spinner.style.display = 'block'
     const canvas = document.getElementsByTagName('canvas')[0]
@@ -196,8 +196,8 @@ function init() {
 
   //Creation Of Sphere/Moon And Moon Textures/Materials
   const geometry = new three__WEBPACK_IMPORTED_MODULE_0__["SphereBufferGeometry"](100, 50, 50);
-  const textureMap = new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load('moon.jpg');
-  const normalMap = new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"](manager).load('normal.jpg');
+  const textureMap = new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"](manager).load('moon.jpg');
+  const normalMap = new three__WEBPACK_IMPORTED_MODULE_0__["TextureLoader"]().load('normal.jpg');
   const material = new three__WEBPACK_IMPORTED_MODULE_0__["ShaderMaterial"]({
     uniforms: {
       lightPosition: {
