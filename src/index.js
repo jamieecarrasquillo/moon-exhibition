@@ -64,7 +64,7 @@ const light = {
 const manager = new THREE.LoadingManager(
   () => {
     //Once Loaded
-    console.log('Greetings from space!')
+    console.log('Open me in a mobile browser for a better experience ~')
     const spinner = document.getElementById('spinner');
     spinner.style.display = 'none';
     const canvas = document.getElementsByTagName('canvas')[0];
@@ -72,6 +72,7 @@ const manager = new THREE.LoadingManager(
   },
   () => {
     //While Loading
+    console.log('Greetings from space ~');
     const spinner = document.getElementById('spinner')
     spinner.style.display = 'block'
     const canvas = document.getElementsByTagName('canvas')[0]
