@@ -15,6 +15,6 @@ To run this project, install it locally using npm:
 ```
 $ cd ../moon-exhibition
 $ npm install
-$ npm run start
+$ npm run start-dev
 ```
 Watch it live on `http://localhost:8080`
