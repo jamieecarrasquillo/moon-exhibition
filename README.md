@@ -17,3 +17,4 @@ $ cd ../moon-exhibition
 $ npm install
 $ npm run start
 ```
+Watch it live on `http://localhost:8080`
