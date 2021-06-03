@@ -4,10 +4,10 @@ A THREE.js moon exhibition, where you can play around with the moon's x, y, z-ax
 ![Moon image](https://github.com/jamieeunice/moon-exhibition/blob/master/Screen%20Shot%202021-02-05%20at%202.41.28%20PM.png)
 
 ## Table of Content
-* [Links](#links)
+* [Demo](#links)
 * [Setup](#setup)
 
-## Links
+## Demo
 [Heroku](https://moonanly.herokuapp.com/)
 
 ## Setup
